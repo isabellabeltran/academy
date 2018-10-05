@@ -1,0 +1,98 @@
+.header {
+  height: 100vh;
+
+  &__video {
+    height: 100vh;
+    background-image: url(./images/home.jpg);
+    background-size: cover;
+    background-position: bottom;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // height: 67%;
+    // // z-index: 1;
+    // opacity: .6;
+    // overflow: hidden;
+
+    // @include respond(tab-port) {
+    //   height: 62%;
+    // }
+    // @include respond(phone) {
+    //   height: 60%;
+    // }
+
+    // &--content {
+    //   height: 100%;
+    //   width: 100%;
+    //   object-fit: cover;
+    // }
+  }
+  &__heading {
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    text-align: center;
+    color: $color-purple;
+    text-shadow: 1px 1px 1px $light-grey;
+    @include respond(tab-port) {
+      left: 26%; 
+    }
+    @include respond(phone) {
+      left: 22%;
+    }
+    @include respond(small) {
+      left: 2%;
+    }
+
+    &--donate {
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      margin-top: 1rem;
+      border: solid $color-purple thin;
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: .5rem;
+      cursor: pointer;
+      font-size: 1.7rem;
+      color: $color-purple;
+      transition: transform .4s;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-purple;
+        transform: translateY(-1rem) scale(1.03);
+        border: solid $color-white thin;
+      }
+      &:active {
+        transform: translateY(.1rem) scale(1.03);
+      }
+    }
+  }
+  &__greeting {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 67%;
+    height: 23.2rem;
+    color: $color-white;
+    background-color: $color-purple;
+    width: 100%;
+    & div:first-of-type {
+      margin-bottom: 2rem;
+      margin-top: 3.5rem;
+    }
+    @include respond(tab-port) {
+      top: 65%;
+      left: 0%; 
+    }
+    @include respond(phone) {
+      top: 65%;
+      left: 0%;
+    }
+    @include respond(small) {
+      left: 0;
+      padding: 0 6rem;
+    }
+  }
+}

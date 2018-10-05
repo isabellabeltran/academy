@@ -1,0 +1,499 @@
+//DR. JOHN 
+.johnPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
+    }
+    &:hover {
+      color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
+
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(5.5rem) translateX(.9rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
+  } 
+}
+
+
+// VASSILIKI DASKALAKIS
+
+.popup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
+    }
+    &:hover {
+      color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(2.5rem) translateX(-.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
+  } 
+}
+
+// JACOB REISCH 
+
+.jakePopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
+    }
+    &:hover {
+      color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(2.5rem) translateX(-.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
+  } 
+}
+
+//ISABELLA BELTRAN
+
+.isabellaPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
+    }
+    &:hover {
+      color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
+
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(2.5rem) translateX(-.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
+  } 
+}
+
+//SAM LANGER
+
+.samPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
+    }
+    &:hover {
+      color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(3.5rem) translateX(-.1rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
+  } 
+}
+
+//DANIEL KING
+
+.danielPopup {
+  height: 100vh; 
+  width: 100%; 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background-color: rgba($color-black, .6);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; 
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link, 
+    &:visited {
+      color: $dark-grey; 
+      position: absolute;
+      top: 1rem;
+      right: 2rem; 
+      font-size: 2.5rem; 
+      text-decoration: none;
+      display: inline-block;
+      @include respond(small) {
+        font-size: 4rem;
+      }
+    }
+    &:hover {
+      color: $color-pink;
+    }
+    &:active {
+      @include respond(small) {
+        color: $color-pink;
+      }
+    }
+  }
+
+  &__content {
+    @include absCenter; 
+    width: 50%; 
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    @include respond(small) {
+      width: 65%; 
+    }
+  }
+  &__right {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &--shape {
+      width: 20rem;
+      height: 20rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+    &--img {
+      height: 100%;
+      transform: translateY(7rem) translateX(-3.5rem) scale(1.7);
+      backface-visibility: hidden;
+    }
+  }
+  &__left {
+    color: $color-pink;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 2rem; 
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    @include respond(small) {
+      font-size: 2.5em;
+    }
+  } 
+}

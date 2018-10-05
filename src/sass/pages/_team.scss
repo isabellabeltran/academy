@@ -1,0 +1,86 @@
+#section-team {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.team {
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/teamHeader.jpg);
+}
+.teamQuote {
+  color: $color-pink;
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.teamHeading {
+  color: $color-blue;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.member {
+  &__picture {
+    &--img {
+      object-fit: cover;
+      height: 28rem;
+      width: 20rem;
+      border: solid $color-blue;
+    }
+  }
+
+  &__information {
+    color: $color-blue;
+    &--name {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+      margin-top: 1rem;
+    }
+    &--role {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+    }
+    &--jijenge {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+    }
+  }
+  &__bio {
+    position: relative;
+    display: inline-block;
+
+    &--link {
+      margin-top: 1.5rem;
+      font-size: 1.3rem;
+      letter-spacing: 0;
+      border-bottom: solid $color-pink thin;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      color: $color-pink;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    &--content {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 25rem;
+      padding: 1rem;
+      letter-spacing: 0;
+      color: $color-white;
+      background-color: $color-pink;
+      z-index: 1;
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: center;
+      box-shadow: 0 2rem 4rem $dark-grey;
+    }
+    &:hover &--content {
+      display: block;
+    }
+  }
+}

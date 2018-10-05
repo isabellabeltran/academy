@@ -1,0 +1,59 @@
+.meaning-cards {
+  height: 35rem;
+  width: 35rem;
+  background-color: $blue;
+  box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+  @include respond(tab-port) {
+    height: 36rem;
+  }
+  @include respond(phone) {
+    height: 34rem;
+  }
+
+  &__picture {
+  
+    &--1 {
+      height: 25rem;
+      width: 100%;
+      background-size: cover;
+      background-image: url(./images/basicEducation.jpg);
+    }
+    &--2 {
+      height: 25rem;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url(./images/stemEducation.jpg);
+    }
+    &--3 {
+      height: 25rem;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url(./images/careerDev.jpg);
+    }
+  }
+  &__content {
+    color: $color-white;
+    &--title {
+      font-size: 2rem;
+      padding-top: .5rem;
+      @include respond(tab-port) {
+      padding-top: 1rem;
+      }
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+    &--subtitle {
+      font-size: 1.5rem;
+      padding: 1rem;
+      @include respond(tab-port) {
+        font-size: 1.7rem;
+      }
+      @include respond(phone) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

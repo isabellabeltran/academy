@@ -1,0 +1,133 @@
+.donateBackground {
+  background-color: $blue;
+  padding-bottom: 1rem;
+
+  &__heading {
+    text-align: center;
+  }
+}
+
+// Select amount and frequency
+
+.amount {
+  border: solid $purple thin;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  &__container {
+    margin-bottom: 1rem;
+    background-color: $color-white;
+    text-align: center;
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    &--label {
+      padding: 0 .5rem;
+      font-size: 2rem;
+      color: $color-black;
+    }
+    &--input {
+      border: none;
+      font-family: 'Ubuntu';
+      font-size: 2rem;
+      padding: .7rem; 
+      width: 15rem;
+      outline: none;
+      white-space: nowrap;
+    }
+  }
+}
+
+.frequency {
+  // background-color: white;
+  &__onetime {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 4rem;
+    color: $color-white; 
+    font-size: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: solid $color-white thin; 
+  }
+  &__onetime:hover {
+    background-color: $color-purple; 
+    color: $color-white;
+  }
+  &__monthly {
+    display: inline-block;
+    padding: 1rem 4rem;
+    color: $color-white; 
+    font-size: 1.5rem;
+    border-top-right-radius:1rem;
+    border-bottom-right-radius: 1rem;
+    border: solid $color-white thin; 
+  }
+  &__monthly:hover {
+    background-color: $color-purple; 
+    color: $color-white;
+  }
+}
+
+// One time donation
+
+.donateHeaderContainer {
+  padding-top: 12rem;
+  color: $color-purple;
+  padding-bottom: 4rem;
+}
+
+.donationForm {
+  border: solid $purple thin;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  &__formLabel {
+    color: $purple;
+    padding: .7rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  &__information {
+    border: solid $purple thin;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    &--input {
+      display: block;
+      margin: .7rem;
+      width: 40rem;
+      padding: .5rem;
+      border: none;
+      border-radius: .3rem;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.4rem;
+    }
+  }
+  &__donation {
+    border: solid $purple thin;
+    border-radius: .5rem;
+    padding: 2rem;
+  }
+  &__button {
+    display: inline-block;
+    border-radius: .5rem;
+    background-color: white;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: $purple;
+    padding: 1rem;
+    margin-left: 23rem;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+}
+
+.everyForm {
+  margin-bottom: 35rem;
+}

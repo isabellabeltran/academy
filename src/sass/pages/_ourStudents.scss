@@ -1,0 +1,125 @@
+.ourStudentsHeader {
+  background-image: url(./images/ourStudentsHeader.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+  text-shadow: 1px 1px 1px $dark-grey;
+  @include respond(small) {
+    height: 55%;
+    background-position: top;
+  }
+  &__text {
+    padding-top: 12rem;
+    text-align: center;
+    color: $color-white;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    @include respond(phone) {
+      padding-top: 9rem;
+      font-size: 4rem;
+    }
+  }
+  &__subtext {
+    text-align: center;
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-top: 1rem;
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.ourStudents {
+  &__header {
+    color: $color-purple;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.studentsContainer {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+
+  &__eachStudent {
+    background-color: $color-blue;
+    display: inline-block;
+    width: 30rem;
+    height: 50rem;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    vertical-align: top;
+    position: relative;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    @include respond(phone) {
+      height: 43rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+      @include respond(phone) {
+        margin-right: 2rem;
+      }
+      @include respond(small) {
+        margin-right: 1rem;
+      }
+    }
+
+    &--picture img {
+      height: 25rem;
+    }
+    &--pictureDaniel img {
+      width: 21rem;
+    }
+    &--pictureWinnie img {
+      width: 19.5rem;
+    }
+    &--info {
+      &-title {
+        font-size: 2rem;
+        color: $color-white;
+        margin-top: 1rem;
+        @include respond(phone) {
+          font-size: 3rem;
+        }
+      }
+      &-subtitle {
+        font-size: 1.5rem;
+        color: $color-white;
+        font-weight: 300;
+        margin-top: 1rem;
+        @include respond(phone) {
+          font-size: 2.1rem;
+        }
+      }
+      &-subtitle div {
+        font-size: 1.7rem;
+        color: $color-purple;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
+        bottom: 1.7rem;
+        left: 2rem;
+        position: absolute;
+        transition: transform 0.6s;
+        &:hover {
+          text-decoration: underline;
+          transform: translateX(2rem) scale(1);
+          @include respond(phone) {
+            transform: none;
+          }
+        }
+        @include respond(phone) {
+          left: 10.5rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
