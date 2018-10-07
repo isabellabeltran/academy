@@ -27,8 +27,8 @@ export default class Meaning extends Component {
             <div className="meaning-cards">
               <div className="meaning-cards__picture--2"></div>
               <div className="meaning-cards__content">
-                <div className="meaning-cards__content--title">STEM Education</div>
-                <div className="meaning-cards__content--subtitle">Jijenge delivers a 1 year STEM program tailored to the student's needs</div>
+                <div className="meaning-cards__content--title">Vocational Computer Training</div>
+                <div className="meaning-cards__content--subtitle">Jijenge trains students in remote work computer tasks like image annotation, data entry, and ad-logging</div>
               </div>
             </div>
           </div>
@@ -36,8 +36,8 @@ export default class Meaning extends Component {
             <div className="meaning-cards">
               <div className="meaning-cards__picture--3"></div>
               <div className="meaning-cards__content">
-                <div className="meaning-cards__content--title">Career Development</div>
-                <div className="meaning-cards__content--subtitle">Jijenge increases earning potential through a reliable candidate pipeline for global companies.</div>
+                <div className="meaning-cards__content--title">Career Acceleration</div>
+                <div className="meaning-cards__content--subtitle">Jijenge works to place students in computer jobs with strong upward mobility potential</div>
               </div>
             </div>
           </div>

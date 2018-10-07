@@ -6,16 +6,12 @@
     text-align: center;
   }
 }
-
-// Select amount and frequency
-
 .amount {
-  border: solid $purple thin;
   border-radius: 1rem;
-  padding: 1rem;
-  text-align: center;
+  padding-bottom: 1rem;
 
   &__container {
+    margin-top: 2rem;
     margin-bottom: 1rem;
     background-color: $color-white;
     text-align: center;
@@ -25,49 +21,28 @@
     border-radius: .5rem;
     &--label {
       padding: 0 .5rem;
-      font-size: 2rem;
+      font-size: 1.6rem;
       color: $color-black;
+    }
+    &--donationLabel {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      display: block;
+      color: $purple;
+      display: inline-block;
+      margin-right: 1rem;
+      font-family: 'Ubuntu';
     }
     &--input {
       border: none;
       font-family: 'Ubuntu';
-      font-size: 2rem;
-      padding: .7rem; 
-      width: 15rem;
+      font-size: 1.5rem;
+      padding: .7rem 0; 
+      padding-left: 1rem;
+      width: 6rem;
       outline: none;
       white-space: nowrap;
     }
-  }
-}
-
-.frequency {
-  // background-color: white;
-  &__onetime {
-    display: inline-block;
-    cursor: pointer;
-    padding: 1rem 4rem;
-    color: $color-white; 
-    font-size: 1.5rem;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    border: solid $color-white thin; 
-  }
-  &__onetime:hover {
-    background-color: $color-purple; 
-    color: $color-white;
-  }
-  &__monthly {
-    display: inline-block;
-    padding: 1rem 4rem;
-    color: $color-white; 
-    font-size: 1.5rem;
-    border-top-right-radius:1rem;
-    border-bottom-right-radius: 1rem;
-    border: solid $color-white thin; 
-  }
-  &__monthly:hover {
-    background-color: $color-purple; 
-    color: $color-white;
   }
 }
 
@@ -83,6 +58,26 @@
   border: solid $purple thin;
   border-radius: 1rem;
   padding: 1rem;
+
+  &__amounts {
+  margin-bottom: 2rem;
+    &--btn {
+      margin-top: .5rem;
+      display: inline-block;
+      padding: 1rem 2.3rem;
+      font-size: 1.3rem;
+      color: $color-white;
+      cursor: pointer;
+      border: solid $color-purple thin;
+      border-radius: .5rem;
+      margin-right: 1.6rem;
+    }
+    &--btn:hover {
+      background-color: $color-purple;
+      transform: translateY(-.5rem) scale(1.01);
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
+  }
 
   &__formLabel {
     color: $purple;
@@ -119,15 +114,107 @@
     background-color: white;
     text-align: center;
     margin: 1rem 0;
-    font-size: 1.5rem;
-    color: $purple;
-    padding: 1rem;
-    margin-left: 23rem;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    color: $color-white;
+    background-color: $color-purple;
+    margin-left: 19rem;
+    letter-spacing: .2rem;
     margin-top: 2rem;
     cursor: pointer;
+    transition: transform .4s;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    &:hover {
+      background-color: $color-white;
+      color: $color-purple;
+      border: solid $color-purple thin;
+      transform: translateY(-1rem) scale(1.03);
+    }
   }
 }
 
 .everyForm {
   margin-bottom: 35rem;
+}
+
+.StripeElement {
+  background-color: $color-white;
+  padding: .7rem .5rem;
+  border-radius: .5rem;
+  margin-top: -2rem;
+}
+
+
+
+// SWITCHER
+
+.question {
+  position: relative;
+  &__container {
+    color: $color-purple; 
+    position: absolute;
+    top: .7rem;
+    left: 5.5rem;
+    font-size: 1.3rem;
+  }
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-purple;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  right: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $color-purple;
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  // box-shadow: 0 0 1px $color-purple;
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-18px);
+  -ms-transform: translateX(-18px);
+  transform: translateX(-18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 32px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

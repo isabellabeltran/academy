@@ -18,29 +18,27 @@
   &__container {
     margin-top: 2rem;
     display: inline-block;
-    // &--email {
-    //   font-family: "Ubuntu", sans-serif;
-    //   font-size: 1.3rem;
-    //   padding: 1rem 1rem;
-    //   width: 20rem;
-    //   border: solid $color-pink thin;
-    //   border-top-left-radius: 1rem;
-    //   border-bottom-left-radius: 1rem;
-    //   vertical-align: top;
-    //   white-space: nowrap;
-    // }
     &--btn {
       font-family: "Ubuntu", sans-serif;
       font-size: 1.3rem;
+      letter-spacing: .2rem;
       text-transform: uppercase;
       text-decoration: none;
-      border: solid $color-pink thin;
-      background-color: $color-pink;
       opacity: 0.8;
+      background-color: $color-pink;
       color: $color-white;
-      border-radius: 1rem;
-      padding: 1rem 1rem;
+      border-radius: .5rem;
+      padding: 1.25rem 2rem;
       cursor: pointer;
+      margin-top: 1rem;
+      transition: transform .4s;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+      &:hover {
+        background-color: $color-white;
+        color: $color-pink;
+        border: solid $color-pink thin;
+        transform: translateY(1rem) scale(1.03);
+      }
     }
   }
 }
@@ -129,6 +127,7 @@
 .section-experience {
   margin-top: 5rem;
   position: relative;
+  font-family: 'Ubuntu', sans-serif;
   &__heading {
     color: $color-pink;
     position: absolute;
@@ -151,26 +150,31 @@
     &--form {
       position: absolute;
       top: 20%;
-      left: 42%;
+      left: 39.5%;
       @include respond(phone) {
-        // top: 8%;
         left: 42%;
       }
     }
     &--btn {
-      // position: absolute;
-
       font-family: "Ubuntu", sans-serif;
       font-size: 1.3rem;
+      letter-spacing: .2rem;
       text-transform: uppercase;
       text-decoration: none;
-      border: solid $color-pink thin;
-      background-color: $color-pink;
       opacity: 0.8;
+      background-color: $color-pink;
       color: $color-white;
-      border-radius: 1rem;
-      padding: 1rem 1rem;
+      border-radius: .5rem;
+      padding: 1.25rem 2rem;
       cursor: pointer;
+      transition: transform .4s;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+      &:hover {
+        background-color: $color-white;
+        color: $color-pink;
+        border: solid $color-pink thin;
+        transform: translateY(1rem) scale(1.03);
+      }
     }
   }
 }

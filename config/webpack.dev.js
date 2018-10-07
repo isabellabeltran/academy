@@ -101,7 +101,8 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "./src/index.html",
       inject: true,
-      title: "Jijenge"
+      title: "Jijenge",
+      favicon: 'src/images/favicon.ico'
     })
   ]
 }

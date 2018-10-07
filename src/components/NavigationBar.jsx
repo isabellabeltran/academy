@@ -16,7 +16,7 @@ class NavigationBar extends Component {
         <div className="dropbtn">
           <a className="dropbtnIcon"><FontAwesomeIcon icon='bars' size="5x" /></a>
           <div className="dropdownContent">
-            <Link to='/Donate'>Give monthly</Link>
+            <Link to='/MonthlyDonate'>Give monthly</Link>
             <Link to='/MeetTheStudents'>Our students</Link>
             <Link to='/Team'>Team</Link>
             <Link to='/VisitAfrica'>Visit Africa</Link>
@@ -26,7 +26,7 @@ class NavigationBar extends Component {
         </div>
         {/* WEB */}
         <div className="navigation__list">
-          <div className="navigation__item"><Link className="navigation__link" to='/Donate'>Give monthly</Link></div>
+          <div className="navigation__item"><Link className="navigation__link" to='/MonthlyDonate'>Give monthly</Link></div>
           <div className="navigation__item"><Link className="navigation__link" to='/MeetTheStudents'>Our students</Link></div>
           <div className="navigation__item"><Link className="navigation__link" to='/Team'>Team</Link></div>
           <div className="navigation__item"><Link className="navigation__link" to='/VisitAfrica'>Visit Africa</Link></div>

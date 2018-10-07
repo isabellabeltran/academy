@@ -13,6 +13,7 @@ import {
   faPhoneSquare
 } from "@fortawesome/free-solid-svg-icons";
 import SettingUpStripe from "./SettingUpStripe.jsx";
+import SettingUpStripeMonthly from "./SettingUpStripeMonthly.jsx";
 
 library.add(fab, faCheckSquare, faSearch, faBars, faEnvelope, faPhoneSquare);
 
@@ -59,6 +60,18 @@ export default class extends Component {
                   apiKey="pk_test_tbFndORrRYzJjE2PVtiTnRRU"
                 >
                   <SettingUpStripe {...props} />
+                </StripeProvider>
+              )}
+            />
+            <Route
+              exact
+              path="/MonthlyDonate"
+              component={props => (
+                <StripeProvider
+                  stripe={this.props.stripe}
+                  apiKey="pk_test_tbFndORrRYzJjE2PVtiTnRRU"
+                >
+                  <SettingUpStripeMonthly {...props} />
                 </StripeProvider>
               )}
             />

@@ -133,7 +133,8 @@ module.exports = env => {
       new HTMLWebpackPlugin({
         template: "src/index.html",
         inject: true, 
-        title: "Jijenge"
+        title: "Jijenge",
+        favicon: 'src/images/favicon.ico'
       }),
       new MiniCssExtractPlugin({
         filename: "[name].css"

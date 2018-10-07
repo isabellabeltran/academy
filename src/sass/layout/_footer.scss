@@ -19,9 +19,10 @@
     border-top: solid $color-white thin;
     padding-top: 1.5rem;
     padding-bottom: 5rem;
-    padding-right: 8rem;
-    padding-left: 8rem;
+    padding-right: 40rem;
+    padding-left: 40rem;
     display: inline-block;
+    position: relative;
     @include respond(phone) {
       padding-right: 3rem;
       padding-left: 3rem;
@@ -30,10 +31,21 @@
       
     }
     &--form {
+      position: absolute;
       color: $color-white;
       display: inline-block;
-      padding: 0 6rem;
+      right: 12rem;
       font-size: 1.25rem;
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+    &--application {
+      position: absolute;
+      color: $color-white;
+      display: inline-block;
+      font-size: 1.25rem;
+      left: 10rem;
       @include respond(phone) {
         font-size: 2rem;
       }
@@ -83,7 +95,3 @@
     }
   } 
 }
-
-
-
-

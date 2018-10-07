@@ -12,9 +12,10 @@ export default class Footer extends Component {
       <div className="footer">
         <div className="footer__logo">Jijenge</div>
         <div className="footer__container">
-          <div className="footer__container--form">
-            <div>We are a 501(c)(3)</div>
-            <div>Certified Organization</div>
+          <div className="footer__container--application">
+            <div>Application for federal recognition</div>
+            <div>of section 501(c)(3)</div>
+            <div>charitable status is in process</div>
           </div>
           <div className="footer__container--social">
             <div className="footer__container--social-email"><ControlledEmailPopup  /></div>

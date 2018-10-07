@@ -8,22 +8,20 @@
       z-index: 10;
       transition: all .2s;
       outline-offset: 1rem;
-      filter: grayscale(70%);
 
       &--p1 {
-        width: 60%;
+        width: 65%;
         left: 20%;
         top: 27rem;
-        transform: rotate(180deg);
         @include respond(tab-port) {
           left: 3rem;
         }
       }
 
       &--p2 {
-        width: 40%;
-        right: -.5rem;
-        top: -5rem;
+        width: 65%;
+        left: 6rem;
+        top: 0rem;
         @include respond(tab-port) {
           right: 2rem;
           top: -1rem;
@@ -31,7 +29,7 @@
       }
 
       &--p3 {
-        width: 45%;
+        width: 70%;
         left: 6rem;
         top: 0rem;
         @include respond(tab-port) {

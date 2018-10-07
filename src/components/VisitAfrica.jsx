@@ -15,13 +15,9 @@ import jake10 from "../images/jake10.jpg";
 
 import africa1 from "../images/africa1.jpg";
 import africa2 from "../images/africa2.jpg";
-import africa3 from "../images/africa3.jpg";
-import africa4 from "../images/africa4.jpg";
+import africa3 from '../images/africa3.jpg';
+import africa4 from '../images/africa4.jpg';
 import africa5 from '../images/africa5.jpg';
-import africa6 from '../images/africa6.jpg';
-import africa7 from '../images/africa7.jpg';
-import africa8 from '../images/africa8.jpg';
-// import africa9 from '../images/africa9.jpg';
 
 export default class VisitAfrica extends Component {
   constructor(props) {
@@ -40,7 +36,7 @@ export default class VisitAfrica extends Component {
         jake10
       ],
       meetCurrent: 0,
-      africa: [africa1, africa2, africa3, africa4, africa5, africa6, africa7, africa8],
+      africa: [africa1, africa2, africa3, africa4, africa5],
       expAfrica: 0
     };
   }
@@ -92,23 +88,6 @@ export default class VisitAfrica extends Component {
       });
     }
   }
-
-  // handleRequestItenerary = async e => {
-  //   e.preventDefault();
-  //   const { email } = this.state;
-  //   try {
-  //     const body = {
-  //       email
-  //     };
-  //     const data = await axios.post(
-  //       "http://localhost:3000/api/request/itenerary",
-  //       body
-  //     );
-  //     console.log("Success", data);
-  //   } catch (err) {
-  //     console.log("Error saving email requesting itenerary", err);
-  //   }
-  // };
 
   render() {
     return (
